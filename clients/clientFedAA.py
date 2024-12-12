@@ -7,7 +7,7 @@ from clients.clientbase import Client
 from utils.privacy import *
 
 
-class clientRFL(Client):
+class clientFedAA(Client):
     def __init__(self, args, id, train_samples, test_samples, **kwargs):
         super().__init__(args, id, train_samples, test_samples, **kwargs)
 

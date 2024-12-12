@@ -8,7 +8,7 @@ import numpy as np
 import torchvision
 import logging
 
-from servers.serverRFL import RFL
+from servers.serverFedAA import RFL
 
 from utils.models import *
 from utils.resnet import *

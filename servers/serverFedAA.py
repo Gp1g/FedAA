@@ -2,18 +2,18 @@ import time
 import random
 import torch
 import numpy as np
-from clients.clientRFL import clientRFL
+from clients.clientFedAA import clientFedAA
 from servers.serverbase import Server
 from threading import Thread
 from DDPG import DDPG, environment
 import torch.nn.functional as F
 
 
-class RFL(Server):
+class FedAA(Server):
     def __init__(self, args, times):
         super().__init__(args, times)
 
-        self.set_clients(clientRFL)  # create clients
+        self.set_clients(clientFedAA)  # create clients
         self.agent = DDPG.DDPG(args)
         self.env = environment.FedEnv(args, times)
         self.episodes = args.episodes
