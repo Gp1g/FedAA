@@ -1,7 +1,7 @@
 # FedAA: A Reinforcement Learning Perspective on Adaptive Aggregation for Fair and Robust Federated Learning (AAAI 2025)
 This  repository contains the code for the paper titled **FedAA: A Reinforcement Learning Perspective on Adaptive Aggregation for Fair and Robust Federated Learning**, authored by Jialuo He, Wei Chen, Xiaojin Zhang.
 
-Link to Arxiv: TODO
+Link to [AAAI.](https://ojs.aaai.org/index.php/AAAI/article/view/33878)
 
 ## Installation
 
@@ -21,6 +21,17 @@ We provide the initial data for MNIST in ./dataset, you can run the main.py as f
 ```shell
 python main.py
 ```
-## Citation (TODO)
+## Citation 
+
+``` 
+@inproceedings{He_Chen_Zhang_2025,
+  title     = {FedAA: A Reinforcement Learning Perspective on Adaptive Aggregation for Fair and Robust Federated Learning},
+  author    = {He, Jialuo and Chen, Wei and Zhang, Xiaojin},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {39},
+  number    = {16},
+  pages     = {17085--17093},
+  year      = {2025},
+}
 
 ```
