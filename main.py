@@ -8,7 +8,7 @@ import numpy as np
 import torchvision
 import logging
 
-from servers.serverFedAA import RFL
+from servers.serverFedAA import FedAA
 
 from utils.models import *
 from utils.resnet import *
@@ -50,8 +50,8 @@ def run(args):
         print(args.model)
 
         # select algorithm
-        if args.algorithm == "RFL":
-            server = RFL(args, i)
+        if args.algorithm == "FedAA":
+            server = FedAA(args, i)
         else:
             raise NotImplementedError
 
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     parser.add_argument('-gr', "--global_rounds", type=int, default=200)
     parser.add_argument('-ls', "--local_epochs", type=int, default=20,
                         help="Multiple update steps in one local epoch.")
-    parser.add_argument('-algo', "--algorithm", type=str, default="RFL")
+    parser.add_argument('-algo', "--algorithm", type=str, default="FedAA")
     parser.add_argument('-nc', "--num_clients", type=int, default=100,
                         help="Total number of clients")
     parser.add_argument('-ns', "--num_sel_clients", type=int, default=100,

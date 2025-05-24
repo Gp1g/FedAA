@@ -4,7 +4,7 @@ import torch.nn as nn
 import numpy as np
 import time
 from clients.clientbase import Client
-from utils.privacy import *
+# from utils.privacy import *
 
 
 class clientFedAA(Client):
